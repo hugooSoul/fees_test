@@ -22,3 +22,7 @@ require 'fees'
 ```ruby
 Fees.reservation(tickets_number, method=['card', 'bank'])
 ```
+
+There is a default Payment method witch is "card".
+The max number of tickets_number per person is equal to 10,
+and tickets_number must to be greater than 0.
