@@ -8,11 +8,14 @@ class Calculator
   end
 
   def reservation
-    case @method
-    when "bank"
+    if @method == "bank"
       return @tickets * @price + @charge
     else
-      return @tickets * @price * @charge
+      percentage = @charge / 100
+      tickets_amount = @tickets * @price
+      to_sum = tickets_amount * percentage
+      result = tickets_amount + to_sum
+      return result.to_f
     end
   end
 
