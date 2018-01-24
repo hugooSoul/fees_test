@@ -20,9 +20,11 @@ require 'fees'
 ## Usage
 
 ```ruby
-Fees.reservation(tickets_number, method=['card', 'bank'])
+Fees.reservation(tickets_number, method=['card', 'bank'], charge)
 ```
 
 1. There is a default Payment method witch is "card".
 2. The max number of tickets_number per person is equal to 10,
 3. tickets_number must to be greater than 0.
+4. charge is the custom percentage
+5. Default percentage for card is 3.5 and per bank == $10
