@@ -1,8 +1,8 @@
-#Fees
+# Fees
 
 With this module, you can make your tickets reservation.
 
-##Gettin' started
+## Gettin' started
 
 Install the 'fees' package on your system
 
@@ -16,7 +16,7 @@ Require 'fee' in your file
 require 'fees'
 ```
 
-##Usage
+## Usage
 
 ```ruby
 Fees.reservation(tickets_number, method=['card', 'bank'], charge)
