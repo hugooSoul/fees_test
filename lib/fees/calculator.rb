@@ -4,9 +4,9 @@ class Calculator
   CARD_PAYMENT = 3.5
   BANK_PAYMENT = 10
 
-  def initialize(tickets, method, charge)
+  def initialize(tickets, method, new_fee)
     @tickets = tickets
-    @charge = charge
+    @charge = new_fee
     @method = method
   end
 
